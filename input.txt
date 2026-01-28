@@ -1,0 +1,7 @@
+
+16
+2
+8
+3
+9
+4cd "c:\sahil java\" ; if ($?) { javac class10march3.java } ; if ($?) { java class10march3 }3

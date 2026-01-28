@@ -1,0 +1,29 @@
+import java.util.Arrays;
+
+public class array1 {
+   public array1() {
+   }
+
+   public static int[] moveZeros(int[] var0) {
+      int var1 = var0.length;
+      int var2 = 0;
+
+      for(int var3 = 0; var3 < var1; ++var3) {
+         if (var0[var3] != 0) {
+            var0[var2++] = var0[var3];
+         }
+      }
+
+      while(var2 < var1) {
+         var0[var2++] = 0;
+      }
+
+      return var0;
+   }
+
+   public static void main(String[] var0) {
+      int[] var1 = new int[]{0, 1, 0, 3, 12};
+      int[] var2 = moveZeros(var1);
+      System.out.println(Arrays.toString(var2));
+   }
+}
